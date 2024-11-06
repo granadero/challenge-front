@@ -1,0 +1,60 @@
+@import "@/styles/variables.module.scss";
+@import "@/styles/mixins.scss";
+
+.section {
+  background-color: $background-secondary;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 30px 50px 10px 10px;
+  @include sm {
+    padding: 2%;
+  }
+}
+
+.divLeft {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  gap: 20px;
+}
+
+.divRight {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  @include sm {
+    align-items: flex-end;
+  }
+}
+
+.priceAndTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.9);
+  @include sm {
+    font-size: 18px;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.9);
+  @include sm {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailItem component should match snapshot 1`] = `
+<div>
+  <section
+    class="section"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="imageAndPrice"
+      >
+        <img
+          alt="Item Test"
+          data-nimg="1"
+          decoding="async"
+          height="500"
+          loading="lazy"
+          src="/_next/image?url=http%3A%2F%2Fexample.com%2Fimage.jpg&w=750&q=75"
+          srcset="/_next/image?url=http%3A%2F%2Fexample.com%2Fimage.jpg&w=384&q=75 1x, /_next/image?url=http%3A%2F%2Fexample.com%2Fimage.jpg&w=750&q=75 2x"
+          style="color: transparent;"
+          width="360"
+        />
+        <div
+          class="priceAndTitle"
+        >
+          <div
+            class="conditionAndSolds"
+          >
+            Nuevo
+             | 
+            10
+             vendidos
+          </div>
+          <h1
+            class="title"
+          >
+            Item Test
+          </h1>
+          <div
+            class="amount"
+          >
+            <h1
+              class="price"
+            >
+              $ 100
+            </h1>
+          </div>
+          <button
+            class="button"
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
+      <hr
+        color="#d2d2d2"
+      />
+      <div
+        class="description"
+      >
+        <h2
+          class="titleDescription"
+        >
+          Descripción del producto
+        </h2>
+        <p
+          class="descriptionText"
+        >
+          This is an example item
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;

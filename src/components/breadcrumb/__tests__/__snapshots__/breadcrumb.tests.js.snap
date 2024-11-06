@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb should match snapshot 1`] = `
+<div>
+  <section
+    class="breadcrumbContainer"
+  >
+    <ul
+      class="breadcrumb"
+    >
+      <li
+        class="breadcrumbItem"
+      >
+        Category 1
+        <span
+          class="separator"
+        >
+          &gt;
+        </span>
+      </li>
+      <li
+        class="breadcrumbItem"
+      >
+        Category 2
+        <span
+          class="separator"
+        >
+          &gt;
+        </span>
+      </li>
+      <li
+        class="breadcrumbItem"
+      >
+        Category 3
+      </li>
+    </ul>
+  </section>
+</div>
+`;

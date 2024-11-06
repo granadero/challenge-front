@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox should match snapshot 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <div
+      class="container"
+    >
+      <img
+        alt="Logo Mercado Libre"
+        class="logo"
+        data-nimg="1"
+        decoding="async"
+        height="34"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="134"
+      />
+      <div
+        class="inputContainer"
+      >
+        <input
+          placeholder="Buscar..."
+          type="text"
+          value=""
+        />
+        <button
+          type="submit"
+        >
+          <img
+            alt="Botón buscar"
+            data-nimg="1"
+            decoding="async"
+            height="16"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=32&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 1x, /_next/image?url=%2Fimg.jpg&w=32&q=75 2x"
+            style="color: transparent;"
+            width="16"
+          />
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+`;

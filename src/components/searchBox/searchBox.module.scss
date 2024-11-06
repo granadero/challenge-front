@@ -1,0 +1,74 @@
+@import "@/styles/variables.module.scss";
+
+.section {
+  background-color: $primary-color;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 40px;
+  padding: 8px 10px 12px 10px;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -999px;
+  height: 34px;
+  width: 134px;
+  display: flex;
+  position: static;
+  left: 0;
+  top: 0;
+  background-size: contain;
+}
+
+.inputContainer {
+  position: relative;
+  width: 40%;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding-right: 50px;
+  box-sizing: border-box;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.90);
+  font-size: 16px;
+  margin: 0;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 100%;
+  padding: 10px 60px 10px 15px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 1.5px;
+}
+
+.inputContainer input:focus-visible {
+  outline: none;
+}
+
+.inputContainer button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #d1d1d1;
+  color: white;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.inputContainer button:hover {
+  background-color: #e6e6e6;
+}

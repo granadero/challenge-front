@@ -1,0 +1,105 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 325px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Extra Small devices
+$min-xs: 576px;
+
+$min-sm: 768px;
+
+$min-md: 992px;
+
+$min-lg: 1200px;
+
+$min-xl: 1400px;
+
+@mixin esm {
+  @media only screen and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin xs {
+  @media only screen and (max-width: 433px),
+    only screen and (max-width: 433px) and (max-resolution: 2dppx),
+    only screen and (max-width: 433px) and (max-resolution: 3dppx),
+    only screen and (max-width: 433px) and (max-resolution: 192dpi),
+    only screen and (max-width: 433px) and (max-resolution: 384dpi) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media only screen and (max-width: 433px),
+    only screen and (max-width: 433px) and (max-resolution: 2dppx),
+    only screen and (max-width: 433px) and (max-resolution: 3dppx),
+    only screen and (max-width: 433px) and (max-resolution: 192dpi),
+    only screen and (max-width: 433px) and (max-resolution: 384dpi) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media only screen and (max-width: 768px) and (min-width: 434px) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media only screen and (max-width: 1044px) and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin especial {
+  @media only screen and (max-width: 1439px) and (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media only screen and (max-width: 1280px) and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin breakpoint($size) {
+  @if $size == xs {
+    @media (max-width: #{($min-xs - 1)}) {
+      @content;
+    }
+  } @else if $size == sm {
+    @media (min-width: #{$min-xs}) and (max-width: #{($min-sm - 1)}) {
+      @content;
+    }
+  } @else if $size == md {
+    @media (min-width: #{$min-sm}) and (max-width: #{($min-md - 1)}) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media (min-width: #{$min-md}) and (max-width: #{($min-lg - 1)}) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (min-width: #{$min-lg}) and (max-width: #{($min-xl - 1)}) {
+      @content;
+    }
+  } @else if $size == xxl {
+    @media (min-width: #{$min-xl}) {
+      @content;
+    }
+  }
+}

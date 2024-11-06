@@ -1,0 +1,119 @@
+@import "@/styles/variables.module.scss";
+@import "@/styles/mixins.scss";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-secondary;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 50px 10px 10px;
+  @include sm {
+    padding: 2%;
+  }
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.imageAndPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  @include sm {
+    flex-wrap: wrap;
+  }
+}
+
+.priceAndTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  gap: 20px;
+  @include sm {
+    flex: 1;
+  }
+}
+
+.conditionAndSolds {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.amount {
+  display: flex;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.9);
+}
+.decimals {
+  font-size: 16px;
+}
+
+.button {
+  background-color: $secondary-color;
+  color: $white;
+  border-radius: 6px;
+  border-style: unset;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 275px;
+  cursor: pointer;
+  &:hover {
+    background-color: $blue-dark;
+    transition: background-color 0.2s ease-in;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  @include sm {
+    padding: 2%;
+  }
+}
+
+.titleDescription {
+  font-size: 24px;
+  font-weight: 300;
+  color: rgb(0, 0, 0, 0.9);
+  @include sm {
+    font-size: 18px;
+  }
+}
+
+.descriptionText {
+  white-space: pre-wrap;
+  font-size: 20px;
+  font-weight: 400;
+  color: #666;
+  @include sm {
+    font-size: 16px;
+  }
+}
+
+.divider {
+  color: "#d2d2d2";
+  @include sm {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+}
